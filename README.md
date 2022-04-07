@@ -12,7 +12,7 @@ Let me introduce you to my lovely HOMEee TOWNnn~
 
 
 ## Wireframe
-!(https://github.com/harnilin/Project-Two/blob/main/public/images/Wireframe.png?raw=true "Wireframe")
+![Wireframe](https://github.com/harnilin/Project-Two/blob/main/public/images/Wireframe.png?raw=true)
 
 ## ERD
 
