@@ -15,7 +15,7 @@ Let me introduce you to my lovely HOMEee TOWNnn~
 ![Wireframe](https://github.com/harnilin/Project-Two/blob/main/public/images/Wireframe.png?raw=true)
 
 ## ERD
-![ERD](https://github.com/harnilin/Project-Two/blob/main/public/images/ERD.png?raw=true)
+![ERD](https://github.com/harnilin/Project-2-WtDiNN/blob/main/public/images/ERD.png?raw=true)
 
 
 #### Any comment? 
