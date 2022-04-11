@@ -1,32 +1,9 @@
-.brand-logo {
-  margin-left: 15px;
-}
-
-.card .card-content .card-title {
-  margin-bottom: 10px;
-}
-
-#search-row form {
-  padding-top: 20px;
-}
-
-.student-name {
-  position: relative;
-  top: -5px;
-}
-
-.collection-item form {
-  margin-top: -5px;
-}
-
-
-
 
 body {
   /* background-image: url(https://cdn.toptutorjob.com/inline-images/zfRGNRwY6OXKOyfwHIh6c7zgNFrSG7T5rgoRnySnzO9vS1N7b8.png);
   background-size: cover;
   background-repeat: no-repeat; */
-  background-color: #F0FFF0;
+  background-color: #dcedc8;
   padding: 50px;
   font: 20px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -42,6 +19,11 @@ a {
   color: rgb(18, 53, 85);
   /* margin: 0px 27px 0px 0px; */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
 }
 
 button {
