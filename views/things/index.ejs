@@ -1,0 +1,25 @@
+<a href="/" <%- title === 'Home' ? 'class="active"' : '' %>>HOME</a>
+<a href="/things/new"	<%- title === 'Add Activity' ? 'class="active"' : '' %>>CREATE</a>
+<a href="/things/login" <%- title === 'Log In' ? 'class="active"' : '' %>>LOG IN</a>
+<link rel='stylesheet' href='/stylesheets/style.css' />
+
+<H1 class="title">THINGS TO DO</H1>
+  <table id="list">
+
+    <tbody>
+      <% things.forEach(function(t) { %>
+        <tr>
+          <td><%= t.image %></td>
+        </tr>
+        <tr>
+          <td><%= t.name %></td>
+        </tr>
+        <tr>
+          <td><a href="/things/<%= t._id %>">DETAILS</a></td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+
+  
+

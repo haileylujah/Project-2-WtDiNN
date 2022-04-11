@@ -18,3 +18,78 @@
 .collection-item form {
   margin-top: -5px;
 }
+
+
+
+
+body {
+  /* background-image: url(https://cdn.toptutorjob.com/inline-images/zfRGNRwY6OXKOyfwHIh6c7zgNFrSG7T5rgoRnySnzO9vS1N7b8.png);
+  background-size: cover;
+  background-repeat: no-repeat; */
+  background-color: #F0FFF0;
+  padding: 50px;
+  font: 20px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img {
+  width: 1520px;
+  height: auto;
+}
+
+a {
+  display: grid;
+  justify-content: end;
+  color: rgb(18, 53, 85);
+  /* margin: 0px 27px 0px 0px; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button {
+  font-family: fantasy;
+}
+
+input {
+  font-family: fantasy;
+}
+
+select {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  height: 3vh;
+  width: 20vh;
+  font-size: 20px;
+}
+
+.submit {
+  font-size: 20px;
+  height: 3vh;
+  width: auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+tbody {
+  font-size: 20px;
+}
+
+#welcome {
+  font-family: fantasy;
+  font-size: 10vh;
+  width: 100vh;
+  height: auto;
+}
+
+.title {
+  display: grid;
+  justify-items: center;
+}
+
+blk {
+  display: flex;
+  align-items: baseline;
+}
+
+p {
+  margin: 2vh;
+  font-size: larger;
+  font-weight: bold;
+}
+

@@ -1,0 +1,19 @@
+<a href="/" <%- title === 'Home' ? 'class="active"' : '' %>>HOME</a>
+<a href="/things" <%- title === 'All Things' ? 'class="active"' : '' %>>ALL LIST</a>
+
+<link rel='stylesheet' href='/stylesheets/style.css' />
+  <form id="new-form" action="/things" method="POST">
+    <label><h2>Add Activity:</h2></label>
+    <label><h4>Name:</h4></label>
+
+    <label><h4>Introduction:</h4></label>
+
+    <label><h4>Address:</h4></label>
+
+    <label><h4>Opening Hours:</h4></label>
+
+    <label><h4>Upload Image:</h4></label>
+    <button>Upload</button>
+    
+    <input class="submit" type="submit" value="Add Activity">
+  </form>
