@@ -1,18 +1,21 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nanning</title>
+  <title>Welcome to Nanning</title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
 
   <a href="/things">EXPLORE</a>
-  <a href="/things/login">LOG IN</a>
+  <% if (user) { %>
+  <a href="/logout">LOG OUT</a>
+  <% } else { %>
+    <a href="/auth/google" class="login">LOG IN</a>
+  <% } %>
   <blk id="welcome">Welcome to</blk>
 
 <img src="https://www.topchinatravel.com/pic/cities-travel-guide-bg/nanning-travel-guide-bg.jpg">

@@ -6,11 +6,11 @@ const isLoggedIn = require('../config/auth')
 
 router.get('/', thingsCtrl.index);
 
-router.get('/login', isLoggedIn, thingsCtrl.new);
+router.get('/new', isLoggedIn, thingsCtrl.new);
 
 // router.get('/:id', thingsCtrl.show);
 
-router.post('/things/new', thingsCtrl.create);
+router.post('/', thingsCtrl.create);
 
 
 

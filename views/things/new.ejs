@@ -1,19 +1,32 @@
-<a href="/" <%- title === 'Home' ? 'class="active"' : '' %>>HOME</a>
-<a href="/things" <%- title === 'All Things' ? 'class="active"' : '' %>>ALL LIST</a>
-
+<div class="navbar"><a href="/" <%- title === 'Home' ? 'class="active"' : '' %>>HOME</a>
+  <% if (user) { %>
+      <a href="/things" <%- title === 'All Activity' ? 'class="active"' : '' %>>ALL ACTIVITY</a>
+      <a href="/logout">LOG OUT</a>
+      <% } else { %>
+        <a href="/auth/google" class="login">LOG IN</a>
+      <% } %></div>
+      <title>ADD ACTIVITY</title>
 <link rel='stylesheet' href='/stylesheets/style.css' />
+<br>
   <form id="new-form" action="/things" method="POST">
-    <label><h2>Add Activity:</h2></label>
+    <label><h2>Add Activity</h2></label>
     <label><h4>Name:</h4></label>
+    <input type="text" name="avtivity" style="width:600px; height:30px;">
 
     <label><h4>Introduction:</h4></label>
+    <textarea name="intro" style="width:600px; height:400px;"></textarea>
 
     <label><h4>Address:</h4></label>
+    <input type="text" name="address" style="width:600px; height:30px;">
 
     <label><h4>Opening Hours:</h4></label>
+    <input type="text" name="hours" style="width:600px; height:30px;">
 
     <label><h4>Upload Image:</h4></label>
-    <button>Upload</button>
+    <input type="url" name="image" style="width:600px; height:30px;">
     
-    <input class="submit" type="submit" value="Add Activity">
+    <br>
+    <input class="submit" type="submit" value="Submit">
   </form>
+
+ 

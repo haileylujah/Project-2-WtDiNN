@@ -75,3 +75,8 @@ p {
   font-weight: bold;
 }
 
+form {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}

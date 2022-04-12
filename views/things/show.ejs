@@ -1,0 +1,17 @@
+<div class="navbar"><a href="/" <%- title === 'Home' ? 'class="active"' : '' %>>HOME</a>
+    <% if (user) { %>
+        <a href="/things/new" <%- title === 'Add Activity' ? 'class="active"' : '' %>>ADD ACTIVITY</a>
+        <a href="/logout">LOG OUT</a>
+        <% } else { %>
+            <a href="/things" <%- title === 'All Activity' ? 'class="active"' : '' %>>ALL ACTIVITY</a>
+          <a href="/auth/google" class="login">LOG IN</a>
+        <% } %></div>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    
+
+    <label>Image</label>
+    <label>Name</label>
+    <label>Introduction</label>
+    <label>Address</label>
+    <label>Opening Hours</label>
+    <label>Reviews</label>
