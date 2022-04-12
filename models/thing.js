@@ -14,26 +14,25 @@ const reviewSchema = new Schema({
 const thingSchema = new Schema({
   name: {
     type: String,
-    required: true
   },
 
   introduction: {
-      type: String,
-      required: true
+    type: String,
+
   },
   address: {
     type: String,
-    required: true
+
   },
 
   openingHours:{
     type: String,
-    required: true
+
   },
 
   image: {
-     type: String,
-     required: true
+    type: String,
+
  },
 });
 

@@ -37,5 +37,5 @@ module.exports = {
   new: newThing,
   create,
   index,
-//   show,
+  // show,
 };

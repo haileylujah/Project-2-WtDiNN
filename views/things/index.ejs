@@ -11,22 +11,17 @@
 
 <H1 class="title">THINGS TO DO</H1>
 
-  <table id="list">
+  <section id="list">
 
-    <tbody>
+  
       <% things.forEach(function(t) { %>
-        <tr>
-          <td><%= t.image %></td>
-        </tr>
-        <tr>
-          <td><%= t.name %></td>
-        </tr>
-        <tr>
-          <td><a href="/things/<%= t._id %>">DETAILS</a></td>
-        </tr>
-        <% }); %>
-      </tbody>
-    </table>
+
+          <%= t.image %>
+          <a href="/things/<%= t._id %>"><%= t.name %></a>
+        
+          <% }); %>
+
+
 
   
 
