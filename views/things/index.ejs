@@ -1,27 +1,21 @@
 <div class="navbar"><a href="/" <%- title === 'Home' ? 'class="active"' : '' %>>HOME</a>
-<% if (user) { %>
-    <a href="/things/new" <%- title === 'Add Activity' ? 'class="active"' : '' %>>ADD ACTIVITY</a>
-    <a href="/logout">LOG OUT</a>
-    <% } else { %>
-      <a href="/auth/google" class="login">LOG IN</a>
-    <% } %></div>
-<link rel='stylesheet' href='/stylesheets/style.css' />
-
-<title>THINGS TO DO</title>
-
-<H1 class="title">THINGS TO DO</H1>
-
-  <section id="list">
-
+  <% if (user) { %>
+      <a href="/things/new" <%- title === 'Add Activity' ? 'class="active"' : '' %>>ADD ACTIVITY</a>
+      <a href="/logout">LOG OUT</a>
+      <% } else { %>
+        <a href="/auth/google" class="login">LOG IN</a>
+      <% } %></div>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
   
-      <% things.forEach(function(t) { %>
-
-          <%= t.image %>
-          <a href="/things/<%= t._id %>"><%= t.name %></a>
-        
-          <% }); %>
-
-
-
+  <title>THINGS TO DO</title>
   
-
+  <H1 class="title">THINGS TO DO</H1>
+  
+    <section id="list">
+  
+    
+        <% things.forEach(function(t) { %>
+            <%= t.image %>
+            <a href="/things/<%= t._id %>"><%= t.name %></a>
+          
+            <% }); %>

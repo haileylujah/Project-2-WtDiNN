@@ -8,7 +8,7 @@ router.get('/', thingsCtrl.index);
 
 router.get('/new', isLoggedIn, thingsCtrl.new);
 
-// router.get('/:id', thingsCtrl.show);
+router.get('/:id', thingsCtrl.show);
 
 router.post('/', thingsCtrl.create);
 

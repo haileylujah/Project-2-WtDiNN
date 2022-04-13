@@ -1,12 +1,13 @@
 const Thing = require("../models/thing");
+const thing = require("../models/thing");
 
 
 
-// function show(req, res) {
-//          res.render('things/show', {
-//            title: 'Activity Detail', thing: thing,
-//     });
-// }
+function show(req, res) {
+         res.render('things/show', {
+           title: 'Activity Detail', thing: thing,
+    });
+}
 
 function newThing(req, res) {
   res.render("things/new", { title: "Add Activity" });
@@ -37,5 +38,5 @@ module.exports = {
   new: newThing,
   create,
   index,
-  // show,
+  show,
 };

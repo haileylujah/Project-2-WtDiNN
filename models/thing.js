@@ -12,28 +12,16 @@ const reviewSchema = new Schema({
 });
 
 const thingSchema = new Schema({
-  name: {
-    type: String,
-  },
+  name: String,
 
-  introduction: {
-    type: String,
+  introduction: String,
 
-  },
-  address: {
-    type: String,
+  address: String,
 
-  },
+  openingHours: String,
 
-  openingHours:{
-    type: String,
+  image: String,
 
-  },
-
-  image: {
-    type: String,
-
- },
 });
 
 module.exports = mongoose.model('Thing', thingSchema);
