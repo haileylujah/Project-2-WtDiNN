@@ -18,9 +18,11 @@ const thingSchema = new Schema({
 
   address: String,
 
-  openingHours: String,
+  hours: String,
 
   image: String,
+
+  reviews: [reviewSchema],
 
 });
 

@@ -3,7 +3,7 @@ const router = express.Router();
 const reviewsCtrl = require('../controllers/reviews');
 
 
-router.post('/things/:id/reviews', reviewsCtrl.create);
+router.post('/things/:id', reviewsCtrl.create);
 router.delete('/reviews/:id', reviewsCtrl.delete);
 
 module.exports = router;

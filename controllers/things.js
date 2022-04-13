@@ -1,11 +1,17 @@
 const Thing = require("../models/thing");
-const thing = require("../models/thing");
 
 
 
 function show(req, res) {
+  console.log(req.params.id, "<- req, params") 
+  
+  Thing.find({_id:req.params.id}, function (err, thing) {
+    console.log(thing, "<- thing")
          res.render('things/show', {
-           title: 'Activity Detail', thing: thing,
+           title: 'Activity Detail', 
+           thing: thing,
+           reviews: thing.reviews,
+          });
     });
 }
 
@@ -26,11 +32,9 @@ function index(req, res) {
 function create(req, res) {
   const thing = new Thing(req.body);
   thing.save(function (err) { 
-    console.log(err, " this err");
     if (err) return res.redirect("/things/new");
     console.log(thing);
-
-    res.redirect(`/things/${thing._id}`);
+    res.redirect(`/things`);
   });
 }
 

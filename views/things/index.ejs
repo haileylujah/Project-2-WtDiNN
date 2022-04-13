@@ -15,7 +15,7 @@
   
     
         <% things.forEach(function(t) { %>
-            <%= t.image %>
+            <img src="<%= t.image %>">
             <a href="/things/<%= t._id %>"><%= t.name %></a>
           
             <% }); %>

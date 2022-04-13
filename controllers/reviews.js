@@ -34,11 +34,12 @@ function create(req, res){
     	req.body.user = req.user._id;
     	req.body.userName = req.user.name;
     	req.body.userAvatar = req.user.avatar;
-
+		console.log(req.body, "<- req.body")
+		console.log(thingFromTheDatabase, "<- 41132423")
 		thingFromTheDatabase.reviews.push(req.body);
 	
 		thingFromTheDatabase.save(function(err){
-			console.log(thingFromTheDatabase)
+			console.log(thingFromTheDatabase, "<- req.body")
 
 			res.redirect(`/things/${thingFromTheDatabase._id}`)	
 		})
