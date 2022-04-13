@@ -16,8 +16,8 @@ body {
 a {
   display: grid;
   justify-content: end;
+  font-size: 23px;
   color: rgb(18, 53, 85);
-  /* margin: 0px 27px 0px 0px; */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -31,7 +31,9 @@ button {
 }
 
 input {
+  font-size: 27px;
   font-family: fantasy;
+  margin-top: 10px;
 }
 
 select {
@@ -60,6 +62,7 @@ tbody {
 }
 
 .title {
+  font-size: 70px;
   display: grid;
   justify-items: center;
 }
@@ -78,7 +81,7 @@ p {
 form {
   display: grid;
   justify-content: center;
-  justify-items: center;
+  justify-items: end;
 }
 
 #list {
@@ -109,3 +112,17 @@ form {
  font-size: 27px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+textarea {
+  width: 100vh;
+  height: 10vh;
+  font-size: 20px;
+}
+
+.comment {
+  display: flex;
+}
+
+/* .center {
+display: flex;
+} */
