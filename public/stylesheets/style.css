@@ -14,8 +14,8 @@ body {
 }
 
 a {
-  /* display: grid;
-  justify-content: end; */
+  display: grid;
+  justify-content: end;
   color: rgb(18, 53, 85);
   /* margin: 0px 27px 0px 0px; */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -87,11 +87,6 @@ form {
   align-items: center;
 }
 
-img {
-  width: 500px;
-  height: auto;
-}
-
 #thumbnail {
   display: flex;
   flex-direction: row;
@@ -113,5 +108,4 @@ img {
   color: rgb(18, 53, 85);
  font-size: 27px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
 }
