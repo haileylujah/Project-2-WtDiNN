@@ -5,7 +5,7 @@ const Thing = require("../models/thing");
 function show(req, res) {
   console.log(req.params.id, "<- req, params") 
   
-  Thing.find({_id:req.params.id}, function (err, thing) {
+  Thing.findById(req.params.id, function (err, thing) {
     console.log(thing, "<- thing")
          res.render('things/show', {
            title: 'Activity Detail', 

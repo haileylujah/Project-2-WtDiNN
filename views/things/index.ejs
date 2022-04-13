@@ -9,11 +9,11 @@
   
   <title>THINGS TO DO</title>
   
-  <H1 class="title">THINGS TO DO</H1>
+  <H1 class="title">EXPERIENCE NANNING</H1>
   
-<div id="thumbnail">
+<div class="thumbnail">
       <% things.forEach(function(t) { %>
-     <div class="object"> <img width="500px" src="<%= t.image %>">
+     <div class="object"> <img width="500px" height="333px" src="<%= t.image %>">
       <a href="/things/<%= t._id %>" class="namelink"><%= t.name %></a></div>
             <% }); %>
             <br>

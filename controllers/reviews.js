@@ -35,7 +35,7 @@ function create(req, res){
     	req.body.userName = req.user.name;
     	req.body.userAvatar = req.user.avatar;
 		console.log(req.body, "<- req.body")
-		console.log(thingFromTheDatabase, "<- 41132423")
+		console.log(thingFromTheDatabase, "<- uhhhh")
 		thingFromTheDatabase.reviews.push(req.body);
 	
 		thingFromTheDatabase.save(function(err){

@@ -62,7 +62,7 @@ tbody {
 }
 
 .title {
-  font-size: 70px;
+  font-size: 50px;
   display: grid;
   justify-items: center;
 }
@@ -90,13 +90,17 @@ form {
   align-items: center;
 }
 
-#thumbnail {
+.thumbnail {
   display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  /* display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
-  align-content: stretch;
+  align-content: stretch; */
 }
 
 .object {
@@ -123,6 +127,13 @@ textarea {
   display: flex;
 }
 
-/* .center {
-display: flex;
+.checked {
+  color: orange;
+}
+
+/* .boxed {
+  border: 1px solid green;
+  background-color: rgb(222, 222, 222);
+  margin-left: 100vh;
+  margin-top: 10vh;
 } */

@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const thingsCtrl = require('../controllers/things');
 const isLoggedIn = require('../config/auth')
+const isAdmin = require
 
 
 router.get('/', thingsCtrl.index);
