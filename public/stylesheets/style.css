@@ -8,14 +8,14 @@ body {
   font: 20px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-img {
+.background {
   width: 1520px;
   height: auto;
 }
 
 a {
-  display: grid;
-  justify-content: end;
+  /* display: grid;
+  justify-content: end; */
   color: rgb(18, 53, 85);
   /* margin: 0px 27px 0px 0px; */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -79,4 +79,32 @@ form {
   display: grid;
   justify-content: center;
   justify-items: center;
+}
+
+#list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 500px;
+  height: auto;
+}
+
+#thumbnail {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-content: stretch;
+}
+
+.object {
+  width: 600px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

@@ -11,11 +11,10 @@
   
   <H1 class="title">THINGS TO DO</H1>
   
-    <section id="list">
-  
-    
-        <% things.forEach(function(t) { %>
-            <img src="<%= t.image %>">
-            <a href="/things/<%= t._id %>"><%= t.name %></a>
-          
+<div id="thumbnail">
+      <% things.forEach(function(t) { %>
+     <div class="object"> <img src="<%= t.image %>">
+      <a href="/things/<%= t._id %>"><%= t.name %></a></div>
             <% }); %>
+            <br>
+          </div>
