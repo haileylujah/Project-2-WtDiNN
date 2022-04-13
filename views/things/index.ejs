@@ -13,8 +13,8 @@
   
 <div id="thumbnail">
       <% things.forEach(function(t) { %>
-     <div class="object"> <img src="<%= t.image %>">
-      <a href="/things/<%= t._id %>"><%= t.name %></a></div>
+     <div class="object"> <img src="<%= t.image %>"><br>
+      <a href="/things/<%= t._id %>" class="namelink"><%= t.name %></a></div>
             <% }); %>
             <br>
           </div>
