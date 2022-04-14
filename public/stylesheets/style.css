@@ -91,16 +91,13 @@ form {
 }
 
 .thumbnail {
+  margin-left: 10vh;
   display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  /* display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: flex-end;
-  align-content: stretch; */
+  align-content: stretch; 
 }
 
 .object {
@@ -127,13 +124,6 @@ textarea {
   display: flex;
 }
 
-.checked {
-  color: orange;
+.picture {
+  display: grid;
 }
-
-/* .boxed {
-  border: 1px solid green;
-  background-color: rgb(222, 222, 222);
-  margin-left: 100vh;
-  margin-top: 10vh;
-} */
