@@ -94,7 +94,7 @@ form {
 }
 
 .thumbnail {
-  margin-left: 10vh;
+  padding: 120px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
