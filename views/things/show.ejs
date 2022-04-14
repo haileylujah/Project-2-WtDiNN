@@ -44,7 +44,7 @@
   <% if (thing.reviews.length) { %>
     <table>
       <tbody>
-        <tr>
+        <!-- <tr>
           <th>Users</th>
           <th></th>
           <th></th>
@@ -52,7 +52,7 @@
           <th>Rating</th>
           <th></th>
           <th>Delete</th>
-        </tr>
+        </tr> -->
 
         <% let total=0 %>
           <% thing.reviews.forEach(function(r) { %>
@@ -73,13 +73,10 @@
                     <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
                       <button type="submit">X</button>
                     </form>
-                    
                   </td>
-                  <br>
                   </tr>
                   
                   <% } %>
-            
 
               <% }); %>
               
