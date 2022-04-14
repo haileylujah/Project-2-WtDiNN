@@ -13,17 +13,17 @@ body {
   height: auto;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
 a {
   display: grid;
   justify-content: end;
   font-size: 23px;
   color: rgb(18, 53, 85);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
 }
 
 button {
@@ -39,8 +39,12 @@ input {
 select {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   height: 3vh;
-  width: 20vh;
+  width: 7vh;
   font-size: 20px;
+}
+
+.rating {
+  margin-bottom: 10px;
 }
 
 .submit {
@@ -81,7 +85,7 @@ p {
 form {
   display: grid;
   justify-content: center;
-  justify-items: end;
+  justify-items: start;
 }
 
 #list {
@@ -124,6 +128,39 @@ textarea {
   display: flex;
 }
 
-.picture {
-  display: grid;
+.review-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
+
+.review-user img {
+  border-radius: 50%;
+  height: 40px;
+}
+
+.review-content {
+  width: 150vh;
+  font-size: 20px;
+}
+
+table {
+  display: flex;
+}
+
+.name {
+  font-size: 50px;
+}
+
+#show-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* .space {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+} */
