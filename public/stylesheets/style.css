@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
 
 body {
   background-color: #dcedc8;
@@ -58,7 +59,7 @@ tbody {
 }
 
 #welcome {
-  font-family: fantasy;
+  font-family: 'WindSong', cursive;
   font-size: 10vh;
   width: 100vh;
   height: auto;
@@ -146,11 +147,6 @@ textarea {
   font-size: 20px;
 }
 
-.ctable {
-  display: flex;
-  align-items: center;
-}
-
 .name {
   font-size: 50px;
 }
@@ -184,11 +180,11 @@ table {
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  /* border: 1px solid #ffffff; */
   text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: rgb(255, 255, 255, 0.3);
 }

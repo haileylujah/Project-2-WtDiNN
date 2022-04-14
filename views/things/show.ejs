@@ -1,80 +1,94 @@
-<div class="navbar"><a href="/" <%- title === 'Home' ? 'class="active"' : '' %>>HOME</a>
-  <% if (user) { %>
-    <a href="/things/new" <%- title === 'Add Activity' ? 'class="active"' : '' %>>ADD ACTIVITY</a>
-      <a href="/things" <%- title === 'All Activity' ? 'class="active"' : '' %>>ALL ACTIVITY</a>
-      <a href="/logout">LOG OUT</a>
-      <% } else { %>
-        <a href="/auth/google" class="login">LOG IN</a>
-      <% } %></div>
-      <title><%= thing.name %></title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' href='/stylesheets/style.css' />
+  <title><%= thing.name %></title>
+</head>
+<body>
+  <div class="navbar"><a href="/" <%- title === 'Home' ? 'class="active"' : '' %>>HOME</a>
+    <% if (user) { %>
+      <a href="/things/new" <%- title === 'Add Activity' ? 'class="active"' : '' %>>ADD ACTIVITY</a>
+        <a href="/things" <%- title === 'All Activity' ? 'class="active"' : '' %>>ALL ACTIVITY</a>
+        <a href="/logout">LOG OUT</a>
+        <% } else { %>
+          <a href="/auth/google" class="login">LOG IN</a>
+        <% } %></div>
+        
+    
+    
+    <br><br> <br><br>
+    <body>
+      <section id="show-page" class="center">
+        <div class="name"><%= thing.name %></div>
+  <div class="picture"><img width="700px" src="<%= thing.image %>"></div>
+  <div class="intro"><%= thing.introduction %></div>
+  <div class="address">Address: <%= thing.address %></div>
+  <div class="hours"><%= thing.hours %></div>
+  </section>
   
-  <br><br> <br><br>
-  <body>
-    <section id="show-page" class="center">
-      <div class="name"><%= thing.name %></div>
-<div class="picture"><img width="700px" src="<%= thing.image %>"></div>
-<div class="intro"><%= thing.introduction %></div>
-<div class="address">Address: <%= thing.address %></div>
-<div class="hours"><%= thing.hours %></div>
-</section>
-
-
-
-<br><br>
-<h2 class="comment">Comments</h2>
-<!-- action="/things/<%# thing._id %>/reviews" -->
-<% if (user) { %>
-  <form id="add-review-form" method="POST">
-    <textarea name="content" placeholder="Add a comment..."></textarea>
-    <br>
-    <label class="rating">Rating:</label>
-    <select name="rating">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-    </select>
-<br>
-    <input type="submit" value="Comment">
-  </form>
-  <% } %>
-
-  <% if (thing.reviews.length) { %>
-    <table>
-        <tr>
-          <th>Users</th>
-          <th>Comment</th>
-          <th>Rating</th>
-          <th>Delete</th>
-        </tr>
-
-        <% let total=0 %>
-          <% thing.reviews.forEach(function(r) { %>
-            <% total +=r.rating %>
-        <tr>
-                <td class="review-user"><img alt="avatar" src="<%= r.userAvatar %>"><%= r.userName %></td>
-
-                <td class="review-content"><%= r.content %> </td>
-
-                <td><%= r.rating %></td>
-
-                <td>
-                <% if (user && user._id.equals(r.user)) { %>
-                    <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
-                      <button type="submit">X</button>
-                    </form>
-                  </td>
-                  </tr>
-                  
-                  <% } %>
-
-              <% }); %>
-
-          </table>
-    <% } else { %>
-      <h3>No comments</h3>
-      <% } %>
-
-    </body>
+  
+  
+  <br><br>
+  <h2 class="comment">Comments</h2>
+  <% if (user) { %>
+    <form id="add-review-form" method="POST">
+      <textarea name="content" placeholder="Add a comment..."></textarea>
+      <br>
+      <label class="rating">Rating:</label>
+      <select name="rating">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+  <br>
+      <input type="submit" value="Comment">
+    </form>
+    <% } %>
+  
+    <% if (thing.reviews.length) { %>
+      <table>
+          <tr>
+            <th>Users</th>
+            <th>Comment</th>
+            <th>Rating</th>
+            <th>Delete</th>
+          </tr>
+  
+          <% let total=0 %>
+            <% thing.reviews.forEach(function(r) { %>
+              <% total +=r.rating %>
+          <tr>
+                  <td class="review-user"><img alt="avatar" src="<%= r.userAvatar %>"><%= r.userName %></td>
+  
+                  <td class="review-content"><%= r.content %> </td>
+  
+                  <td><%= r.rating %></td>
+  
+                  <td>
+                  <% if (user && user._id.equals(r.user)) { %>
+                      <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
+                        <button type="submit">X</button>
+                      </form>
+                      <% } %>
+                    </td>
+                    </tr>
+                <% }); %>
+                <tr>
+                  <td colspan="2"></td>
+                  <td><strong>
+                      <%= (total / thing.reviews.length).toFixed(1) %>
+                    </strong></td>
+                </tr>
+            </table>
+      <% } else { %>
+        <h3>No comments</h3>
+        <% } %>
+  
+      </body>
+</body>
+</html>
