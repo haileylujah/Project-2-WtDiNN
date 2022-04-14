@@ -1,11 +1,14 @@
 
 body {
-  /* background-image: url(https://cdn.toptutorjob.com/inline-images/zfRGNRwY6OXKOyfwHIh6c7zgNFrSG7T5rgoRnySnzO9vS1N7b8.png);
-  background-size: cover;
-  background-repeat: no-repeat; */
   background-color: #dcedc8;
   padding: 50px;
   font: 20px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.homepage {
+  background-image: url(../images/nanning.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .background {

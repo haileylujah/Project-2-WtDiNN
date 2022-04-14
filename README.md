@@ -3,6 +3,8 @@
 
 Let me introduce you to my lovely HOMEee TOWNnn~
 
+[Explore the fun]()
+
 ## User Story 
 
 1. AAU, I want to view a list of all posts about what to do in Nanning. 
