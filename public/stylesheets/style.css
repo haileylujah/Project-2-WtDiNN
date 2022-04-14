@@ -135,6 +135,7 @@ textarea {
 .review-user img {
   border-radius: 50%;
   height: 40px;
+  margin-right: 10px;
 }
 
 .review-content {
@@ -142,8 +143,9 @@ textarea {
   font-size: 20px;
 }
 
-table {
+.ctable {
   display: flex;
+  align-items: center;
 }
 
 .name {

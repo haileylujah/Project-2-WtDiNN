@@ -44,7 +44,7 @@
   <% if (thing.reviews.length) { %>
     <table>
       <tbody>
-        <tr>
+        <!-- <tr>
           <th>Users</th>
           <th>&nbsp;</th>
           <th>Comments</th>
@@ -53,12 +53,12 @@
           <th>&nbsp;</th>
       
           <th>Delete</th>
-        </tr>
+        </tr> -->
 
         <% let total=0 %>
           <% thing.reviews.forEach(function(r) { %>
             <% total +=r.rating %>
-        <tr>
+        <tr class="ctable">
                 <td class="review-user"><img alt="avatar" src="<%= r.userAvatar %>"><%= r.userName %></td>
                 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                 <td class="review-content">
