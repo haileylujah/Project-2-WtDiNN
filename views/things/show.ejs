@@ -43,33 +43,25 @@
 
   <% if (thing.reviews.length) { %>
     <table>
-      <tbody>
-        <!-- <tr>
+        <tr>
           <th>Users</th>
-          <th></th>
-          <th></th>
-          <th></th>
+          <th>Comment</th>
           <th>Rating</th>
-          <th></th>
           <th>Delete</th>
-        </tr> -->
+        </tr>
 
         <% let total=0 %>
           <% thing.reviews.forEach(function(r) { %>
             <% total +=r.rating %>
-        <tr class="ctable">
+        <tr>
                 <td class="review-user"><img alt="avatar" src="<%= r.userAvatar %>"><%= r.userName %></td>
-                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                <td class="review-content">
-                  <%= r.content %> 
-                </td>
-                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td class="review-content"><%= r.content %> </td>
+
+                <td><%= r.rating %></td>
+
                 <td>
-                  &nbsp;&nbsp;&nbsp;&nbsp;<%= r.rating %>
-                </td>
-                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                <td>
-                  &nbsp;&nbsp;&nbsp;&nbsp;<% if (user && user._id.equals(r.user)) { %>
+                <% if (user && user._id.equals(r.user)) { %>
                     <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
                       <button type="submit">X</button>
                     </form>
@@ -79,8 +71,7 @@
                   <% } %>
 
               <% }); %>
-              
-            </tbody>
+
           </table>
     <% } else { %>
       <h3>No comments</h3>
