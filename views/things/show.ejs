@@ -11,13 +11,12 @@
   
   <br><br> <br><br>
   <body>
-
-    <section id="show-page">
+    <section id="show-page" class="center">
       <div class="name"><%= thing.name %></div>
-<img class="picture" width="700px" src="<%= thing.image %>">
-<div><%= thing.introduction %></div>
-<div><%= thing.address %></div>
-<div><%= thing.hours %></div>
+<div class="picture"><img width="700px" src="<%= thing.image %>"></div>
+<div class="intro"><%= thing.introduction %></div>
+<div class="address">Address: <%= thing.address %></div>
+<div class="hours"><%= thing.hours %></div>
 </section>
 
 
@@ -85,7 +84,7 @@
             </tbody>
           </table>
     <% } else { %>
-      <h6>No comments</h6>
+      <h3>No comments</h3>
       <% } %>
 
     </body>

@@ -26,13 +26,9 @@ a {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-button {
-  font-family: fantasy;
-}
-
 input {
-  font-size: 27px;
-  font-family: fantasy;
+  font-size: 22px;
+  font-family: cursive;
   margin-top: 10px;
 }
 
@@ -110,6 +106,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 40px;
 }
 
 .namelink {
@@ -159,8 +156,20 @@ table {
   align-items: flex-start;
 }
 
-/* .space {
-  display: inline-block;
-  width: 120px;
-  height: 120px;
-} */
+.intro {
+  margin-top: 50px;
+}
+
+.address {
+  margin-top: 50px;
+}
+
+.picture {
+  margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+
