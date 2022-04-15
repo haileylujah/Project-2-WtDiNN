@@ -12,7 +12,6 @@
     <a href="/things" <%- title === 'All Activity' ? 'class="active"' : '' %>>ALL ACTIVITY</a>
     <% if (user) { %>
       <a href="/things/new" <%- title === 'Add Activity' ? 'class="active"' : '' %>>ADD ACTIVITY</a>
-        <a href="/things" <%- title === 'All Activity' ? 'class="active"' : '' %>>ALL ACTIVITY</a>
         <a href="/logout">LOG OUT</a>
         <% } else { %>
           <a href="/auth/google" class="login">LOG IN</a>
