@@ -9,6 +9,7 @@
 </head>
 <body>
   <div class="navbar"><a href="/" <%- title === 'Home' ? 'class="active"' : '' %>>HOME</a>
+    <a href="/things" <%- title === 'All Activity' ? 'class="active"' : '' %>>ALL ACTIVITY</a>
     <% if (user) { %>
       <a href="/things/new" <%- title === 'Add Activity' ? 'class="active"' : '' %>>ADD ACTIVITY</a>
         <a href="/things" <%- title === 'All Activity' ? 'class="active"' : '' %>>ALL ACTIVITY</a>

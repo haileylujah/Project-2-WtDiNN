@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Libre+Barcode+39+Text&display=swap');
 
 body {
   background-color: #dcedc8;
   padding: 50px;
-  font: 20px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font: 20px Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .homepage {
   background-image: url(../images/nanning.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #welcome {
@@ -31,14 +31,14 @@ body {
 a {
   display: grid;
   justify-content: end;
-  font-size: 23px;
-  color: rgb(18, 53, 85);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 66px;
+  color: rgb(0, 0, 0);
+  font-family: 'Libre Barcode 128 Text', cursive;
 }
 
 input {
   font-size: 22px;
-  font-family: cursive;
+  font-family: sans-serif;
   margin-top: 10px;
 }
 
@@ -75,12 +75,6 @@ blk {
   align-items: baseline;
 }
 
-p {
-  margin: 2vh;
-  font-size: larger;
-  font-weight: bold;
-}
-
 form {
   display: grid;
   justify-content: center;
@@ -94,13 +88,10 @@ form {
 }
 
 .thumbnail {
-  padding: 120px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
-  align-items: flex-end;
-  align-content: stretch; 
 }
 
 .object {
@@ -114,8 +105,8 @@ form {
 
 .namelink {
   color: rgb(18, 53, 85);
- font-size: 27px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 22px;
+  font-family: sans-serif;
 }
 
 textarea {

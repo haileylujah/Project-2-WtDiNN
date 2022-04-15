@@ -18,11 +18,13 @@
         <% } else { %>
           <a href="/auth/google" class="login">LOG IN</a>
         <% } %></div>
+        <br>
     <h1 class="title">EXPERIENCE NANNING</h1>
     
   <div class="thumbnail">
         <% things.forEach(function(t) { %>
-       <div class="object"> <img width="500px" height="333px" src="<%= t.image %>">
+       <div class="object"> 
+        <a href="/things/<%= t._id %>"><img width="500px" height="333px" src="<%= t.image %>"></a>
         <a href="/things/<%= t._id %>" class="namelink"><%= t.name %></a></div>
               <% }); %>
               <br>

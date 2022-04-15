@@ -9,13 +9,13 @@
   <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body class="homepage">
-
+  <div class="navbar">
   <a href="/things">EXPLORE</a>
   <% if (user) { %>
   <a href="/logout">LOG OUT</a>
   <% } else { %>
     <a href="/auth/google" class="login">LOG IN</a>
-  <% } %>
+  <% } %></div>
   <blk id="welcome">Nanning</blk>
 
 <br>
