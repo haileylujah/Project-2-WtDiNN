@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Libre+Barcode+39+Text&display=swap');
 
 body {
-  background-color: #dcedc8;
+  background-color: #C6D59A;
   padding: 50px;
   font: 20px Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -104,7 +104,7 @@ form {
 }
 
 .namelink {
-  color: rgb(18, 53, 85);
+  color: rgb(0, 0, 0);
   font-size: 22px;
   font-family: sans-serif;
 }
