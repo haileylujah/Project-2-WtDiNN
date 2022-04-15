@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Rubik+Glitch&display=swap');
 
 body {
   background-color: #dcedc8;
@@ -12,9 +12,15 @@ body {
   background-repeat: no-repeat;
 }
 
-.background {
-  width: 1520px;
-  height: auto;
+#welcome {
+  font-family: 'Rubik Glitch', cursive;
+  font-size: 15vh;
+  color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
 }
 
 .navbar {
@@ -56,13 +62,6 @@ select {
 
 tbody {
   font-size: 20px;
-}
-
-#welcome {
-  font-family: 'WindSong', cursive;
-  font-size: 10vh;
-  width: 100vh;
-  height: auto;
 }
 
 .title {
