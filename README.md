@@ -3,13 +3,15 @@
 
 Let me introduce you to my lovely HOMEee TOWNnn~
 
-[Explore the fun]()
+[Explore the fun](https://explorethefun.herokuapp.com/)
 
 ## User Story 
 
-1. AAU, I want to view a list of all posts about what to do in Nanning. 
-2. AAU, I want to view the detail when I click on the link of a post.
-3. AAU, I want to be able to leave/edit/delete comments for the post.
+1. AAU, I want to be able to log in to my account.
+2. AAU, I want to create posts.
+3. AAU, I want to view a list of all posts. 
+4. AAU, I want to view the detail of a post when I click on the link.
+5. AAU, I want to be able to leave/delete comments on a post.
 
 
 
