@@ -7,7 +7,6 @@ body {
   padding: 50px;
   font: 20px Verdana, Geneva, Tahoma, sans-serif;
 }
-
 .homepage {
   background-image: url(../images/nanning.jpg);
   background-size: cover;
@@ -29,17 +28,16 @@ en {
   font-size: 15vh;
   color: rgba(0, 0, 0, 0.7);
   position: fixed;
+    top: 45%;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%)
 }
-
 .navbar {
   display: flex;
   justify-content: space-between;
 }
-
 a {
   display: grid;
   justify-content: end;
@@ -47,69 +45,57 @@ a {
   color: rgb(0, 0, 0);
   font-family: 'Libre Barcode 128 Text', cursive;
 }
-
 a:hover {
   color: rgb(255, 255, 255);
 }
-
 input {
   font-size: 22px;
   font-family: sans-serif;
   margin-top: 10px;
 }
-
 select {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   height: 3vh;
   width: 7vh;
   font-size: 20px;
 }
-
 .rating {
   margin-bottom: 10px;
 }
-
 .submit {
   font-size: 20px;
   height: 3vh;
   width: auto;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 tbody {
   font-size: 20px;
 }
-
 .title {
   font-size: 50px;
   display: grid;
   justify-items: center;
 }
-
 blk {
   display: flex;
   align-items: baseline;
 }
-
 form {
   display: grid;
   justify-content: center;
   justify-items: start;
 }
-
 #list {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .thumbnail {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-
 .object {
   width: 600px;
   height: auto;
@@ -118,59 +104,48 @@ form {
   align-items: center;
   margin-top: 40px;
 }
-
 .namelink {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-family: sans-serif;
 }
-
 textarea {
   width: 100vh;
   height: 10vh;
   font-size: 20px;
 }
-
 .comment {
   display: flex;
 }
-
 .review-user {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
-
 .review-user img {
   border-radius: 50%;
   height: 40px;
   margin-right: 10px;
 }
-
 .review-content {
   width: 150vh;
   font-size: 20px;
 }
-
 .name {
   font-size: 50px;
 }
-
 #show-page {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-
 .intro {
   margin-top: 50px;
 }
-
 .address {
   margin-top: 50px;
 }
-
 .picture {
   margin-top: 50px;
   display: block;
@@ -178,7 +153,6 @@ textarea {
   margin-right: auto;
   width: 30%;
 }
-
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -189,9 +163,6 @@ td, th {
   text-align: left;
   padding: 8px;
 }
-
 tr:nth-child(even) {
   background-color: rgb(255, 255, 255, 0.3);
 }
-
-
