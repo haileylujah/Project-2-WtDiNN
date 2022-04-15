@@ -37,6 +37,3 @@ Let me introduce you to my lovely HOMEee TOWNnn~
 * Users can be able to edit their own comments.
 * Can upload more than one image on each post.
 * Add some animations.
-
-
-
