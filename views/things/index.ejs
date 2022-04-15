@@ -23,8 +23,9 @@
   <div class="thumbnail">
         <% things.forEach(function(t) { %>
        <div class="object"> 
-        <a href="/things/<%= t._id %>"><img width="500px" height="333px" src="<%= t.image %>"></a>
-        <a href="/things/<%= t._id %>" class="namelink"><%= t.name %></a></div>
+        <img src="<%= t.image %>" class="image"></a>
+        <div class="overlay">
+        <a href="/things/<%= t._id %>" class="namelink"><%= t.name %></a></div></div>
               <% }); %>
               <br>
             </div>

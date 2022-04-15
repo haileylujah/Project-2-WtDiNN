@@ -96,6 +96,7 @@ form {
   justify-content: flex-start;
   flex-wrap: wrap;
 }
+
 .object {
   width: 600px;
   height: auto;
@@ -103,12 +104,47 @@ form {
   flex-direction: column;
   align-items: center;
   margin-top: 40px;
+  position: relative;
 }
+
+.image {
+  width: 500px;
+  height: 333px;
+}
+
+.overlay {
+  position: absolute;
+  margin-left: 50px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 500px;
+  height: 333px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #98c34f;
+}
+.object:hover .overlay {
+  opacity: 1;
+}
+
 .namelink {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 22px;
   font-family: sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
+.namelink:hover {
+  color: rgb(0, 0, 0);
+}
+
 textarea {
   width: 100vh;
   height: 10vh;
