@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Rubik+Glitch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Libre+Barcode+39+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
 
 body {
   background-color: #C6D59A;
@@ -12,12 +13,23 @@ body {
   background-size: cover;
 }
 
-#welcome {
+cn {
+  font-family: 'Zhi Mang Xing', cursive;
+  font-size: 20vh;
+  color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+    top: 35%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+en {
   font-family: 'Rubik Glitch', cursive;
   font-size: 15vh;
   color: rgba(0, 0, 0, 0.7);
   position: fixed;
-    top: 45%;
+    top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%)
@@ -174,7 +186,6 @@ table {
 }
 
 td, th {
-  /* border: 1px solid #ffffff; */
   text-align: left;
   padding: 8px;
 }
