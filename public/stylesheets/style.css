@@ -36,6 +36,10 @@ a {
   font-family: 'Libre Barcode 128 Text', cursive;
 }
 
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
 input {
   font-size: 22px;
   font-family: sans-serif;
